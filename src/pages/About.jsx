@@ -6,10 +6,10 @@ import Footer from "../components/Footer";
 
 function About() {
   return (
-    <div>
+    <>
       {/* About section */}
       <section className="bg-primary min-h-screen py-10">
-        <div className="container mx-auto px-5 text-white">
+        <div className="container mx-auto px-5">
           <div className="grid lg:grid-cols-12 gap-8">
             {/* Mobile visibility */}
             <div className="block lg:hidden sm:p-10">
@@ -365,7 +365,7 @@ function About() {
       {/* Footer section */}
       <Footer />
       {/* Footer section */}
-    </div>
+    </>
   );
 }
 
