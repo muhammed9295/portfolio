@@ -10,8 +10,69 @@ function About() {
       {/* About section */}
       <section className="bg-primary min-h-screen py-10">
         <div className="container mx-auto px-5 text-white">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-8">
+          <div className="grid lg:grid-cols-12 gap-8">
+            {/* Mobile visibility */}
+            <div className="block lg:hidden sm:p-10">
+              <div className="bg-[#363636] p-4 sm:p-8 rounded-lg flex flex-col gap-5 sticky top-0">
+                <img
+                  src="/profile-pic.png"
+                  alt="muhammed-sheikh"
+                  className="rounded-md"
+                />
+                <div className="flex flex-col gap-3">
+                  <h2 className="text-[28px] font-semibold">
+                    Technical Skills
+                  </h2>
+                  <ul>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-1
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-2
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-3
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-4
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-5
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-6
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-col gap-3">
+                  <h2 className="text-[28px] font-semibold">Other Skills</h2>
+                  <ul>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-1
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-2
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-3
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-4
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-5
+                    </li>
+                    <li className="flex gap-2 items-center">
+                      <FaCircle className="text-accent text-[12px]" /> Skill-6
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* Mobile visibility */}
+
+            <div className="lg:col-span-8">
               <div className="grid gap-5">
                 <h2 className="text-[42px] text-white font-bold underline underline-offset-8 decoration-2 decoration-accent">
                   About Me
@@ -42,8 +103,8 @@ function About() {
                         Full time
                       </div>
                     </div>
-                    <div className="flex justify-between items-center my-2">
-                      <div className="flex gap-8">
+                    <div className="flex flex-col gap-4 sm:flex-row  justify-between items-center my-2">
+                      <div className="flex gap-1 sm:gap-8">
                         <span className="flex gap-2 items-center text-neutral">
                           <HiOfficeBuilding />
                           <p>Hextrap Solutions</p>
@@ -87,8 +148,8 @@ function About() {
                         Full time
                       </div>
                     </div>
-                    <div className="flex justify-between items-center my-2">
-                      <div className="flex gap-8">
+                    <div className="flex flex-col gap-4 sm:flex-row  justify-between items-center my-2">
+                      <div className="flex gap-1 sm:gap-8">
                         <span className="flex gap-2 items-center text-neutral">
                           <HiOfficeBuilding />
                           <p>Hextrap Solutions</p>
@@ -132,8 +193,8 @@ function About() {
                         Full time
                       </div>
                     </div>
-                    <div className="flex justify-between items-center my-2">
-                      <div className="flex gap-8">
+                    <div className="flex flex-col gap-4 sm:flex-row  justify-between items-center my-2">
+                      <div className="flex gap-1 sm:gap-8">
                         <span className="flex gap-2 items-center text-neutral">
                           <HiOfficeBuilding />
                           <p>Hextrap Solutions</p>
@@ -237,7 +298,7 @@ function About() {
               {/* Education */}
             </div>
 
-            <div className="col-span-4 p-10">
+            <div className="hidden lg:block lg:col-span-4 p-10">
               <div className="bg-[#363636] p-8 rounded-lg flex flex-col gap-5 sticky top-0">
                 <img
                   src="/profile-pic.png"
