@@ -58,7 +58,7 @@ function Header() {
     },
   };
   return (
-    <header className="bg-primary py-6">
+    <header className="bg-primary h-[80px] flex items-center">
       <nav className="container px-5 mx-auto flex justify-between items-center">
         <img src="/logo.png" width="50px" height="50px" alt="logo" />
         <ul className="hidden lg:flex gap-8">
