@@ -91,16 +91,48 @@ function Header() {
 
         <div className="hidden lg:flex gap-8 text-[24px] text-neutral">
           <Link to="#">
-            <FaFacebook className="hover:text-accent" />
+            <motion.div
+              whileHover={{
+                boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
+                scale: 1.1,
+              }}
+              className="rounded-full"
+            >
+              <FaFacebook className="hover:text-accent" />
+            </motion.div>
           </Link>
           <Link to="#">
-            <FaInstagram className="hover:text-accent" />
+            <motion.div
+              whileHover={{
+                boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
+                scale: 1.1,
+              }}
+              className="rounded-full"
+            >
+              <FaInstagram className="hover:text-accent" />
+            </motion.div>
           </Link>
           <Link to="#">
-            <FaLinkedin className="hover:text-accent" />
+            <motion.div
+              whileHover={{
+                boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
+                scale: 1.1,
+              }}
+              className="rounded-full"
+            >
+              <FaLinkedin className="hover:text-accent" />
+            </motion.div>
           </Link>
           <Link to="#">
-            <FaGithub className="hover:text-accent" />
+            <motion.div
+              whileHover={{
+                boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
+                scale: 1.1,
+              }}
+              className="rounded-full"
+            >
+              <FaGithub className="hover:text-accent" />
+            </motion.div>
           </Link>
         </div>
 
