@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <div className="bg-primary">
+    <section className="bg-primary">
       <footer className="container mx-auto py-10 px-5">
         <div className="divider bg-neutral h-[1px] mb-10"></div>
         <div className="flex flex-col gap-8 justify-between items-center lg:flex-row">
@@ -70,7 +70,7 @@ function Footer() {
           </span>
         </div>
       </footer>
-    </div>
+    </section>
   );
 }
 
