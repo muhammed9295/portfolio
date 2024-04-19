@@ -22,6 +22,9 @@ export default {
           "text":"#666666",
           "accent": "#FF9F4D",
           "neutral": "#666666",
+          "info":"#975CC0",
+          "success":"#F95F73",
+          "warning":"#FF8956",
         },
       },
       "dark"
