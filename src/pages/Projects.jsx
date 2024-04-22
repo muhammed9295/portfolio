@@ -27,7 +27,7 @@ const projects = [
     tech2:"Node js",
     tech3:"Express js",
     tech4:"MongoDB",
-    link: "https://descrify.online/",
+    link: "https://mdshkproperties.online",
     githubLink:"https://github.com/muhammed9295?tab=repositories"
   },
   {
