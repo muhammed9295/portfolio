@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
-  const PDF_URL = "http://localhost:5173/muhammed-sheikh.pdf";
+  const PDF_URL = "https://mdshk.netlify.app/muhammed-sheikh.pdf";
 
   const downloadFile = (url) => {
 
