@@ -11,19 +11,16 @@ function Contact() {
           <div className="my-5 grid gap-5">
             <h2 className="text-[42px] text-white font-bold">Get in touch</h2>
             <p className="text-neutral text-[20px] font-normal lg:w-1/2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium ipsa rerum consequatur sint officia voluptates
-              explicabo sit voluptas. Atque corporis iure veritatis labore
-              voluptatibus? Quae voluptatibus molestiae aliquam atque similique!
+            Ready to take your digital presence to the next level? Contact Me today to discuss your project requirements and see how I can help you achieve your goals.
             </p>
           </div>
 
           <div className="my-5 grid gap-2">
             <span className="flex gap-3 items-center text-2xl text-white">
-              <IoMail className="text-accent" /> mdsheikh9295@gmail.com
+              <IoMail className="text-accent" /> mdshk.92@gmail.com
             </span>
             <span className="flex gap-3 items-center text-2xl text-white">
-              <IoCall className="text-accent" /> +971 123455464
+              <IoCall className="text-accent" /> +91 9972218671
             </span>
           </div>
 

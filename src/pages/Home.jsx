@@ -1,6 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
+  const PDF_URL = "http://localhost:5173/muhammed-sheikh.pdf";
+
+  const downloadFile = (url) => {
+
+    fetch(url)
+    .then((response)=> response.blob())
+    .then((blob)=>{
+      const blobUrl = window.URL.createObjectURL(new Blob([blob]))
+      const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = blobUrl;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+    })
+    
+  };
+
   return (
     <section className="bg-primary min-h-[calc(100vh-80px)]">
       <div className="container mx-auto px-5 flex flex-col items-center py-3 gap-6 md:gap-10">
@@ -17,12 +37,17 @@ function Home() {
           </p>
         </span>
         <span className="flex gap-5">
-          <button className="btn btn-secondary w-40 text-[20px] text-primary font-normal hover:bg-accent hover:border-accent">
-            Get in touch
+          <button
+            onClick={()=>{downloadFile(PDF_URL)}}
+            className="btn btn-secondary w-40 text-[20px] text-primary font-normal hover:bg-accent hover:border-accent"
+          >
+            Download CV
           </button>
+          <Link to="/projects">
           <button className="btn btn-outline btn-secondary w-40 text-[20px] text-primary font-normal">
             View Projects
           </button>
+          </Link>
         </span>
       </div>
     </section>

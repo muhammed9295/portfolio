@@ -60,7 +60,9 @@ function Header() {
   return (
     <header className="bg-primary h-[80px] flex items-center">
       <nav className="container px-5 mx-auto flex justify-between items-center">
+      <Link to="/">
         <img src="/logo.png" width="50px" height="50px" alt="logo" />
+        </Link>
         <ul className="hidden lg:flex gap-8">
           <Link to="/">
             <li className="text-[20px] font-medium text-neutral hover:text-accent">
@@ -90,7 +92,7 @@ function Header() {
         </ul>
 
         <div className="hidden lg:flex gap-8 text-[24px] text-neutral">
-          <Link to="#">
+          <Link to="https://www.facebook.com/muhammedsheikhh" target="_blank">
             <motion.div
               whileHover={{
                 boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
@@ -101,7 +103,7 @@ function Header() {
               <FaFacebook className="hover:text-accent" />
             </motion.div>
           </Link>
-          <Link to="#">
+          <Link to="https://www.instagram.com/muhammed_shyk" target="_blank">
             <motion.div
               whileHover={{
                 boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
@@ -112,7 +114,7 @@ function Header() {
               <FaInstagram className="hover:text-accent" />
             </motion.div>
           </Link>
-          <Link to="#">
+          <Link to="https://www.linkedin.com/in/muhammedsheikh" target="_blank">
             <motion.div
               whileHover={{
                 boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
@@ -123,7 +125,7 @@ function Header() {
               <FaLinkedin className="hover:text-accent" />
             </motion.div>
           </Link>
-          <Link to="#">
+          <Link to="https://github.com/muhammed9295" target="_blank">
             <motion.div
               whileHover={{
                 boxShadow: "0 0 20px rgba(255, 159, 77, 0.5)",
@@ -176,16 +178,16 @@ function Header() {
               <Link to="/contact">Contact</Link>
 
               <div className="py-5 flex gap-10 text-3xl text-white">
-                <Link to="#">
+                <Link to="https://www.facebook.com/muhammedsheikhh" target="_blank">
                   <FaFacebook className="hover:text-accent" />
                 </Link>
-                <Link to="#">
+                <Link to="https://www.instagram.com/muhammed_shyk" target="_blank">
                   <FaInstagram className="hover:text-accent" />
                 </Link>
-                <Link to="#">
+                <Link to="https://www.linkedin.com/in/muhammedsheikh" target="_blank">
                   <FaLinkedin className="hover:text-accent" />
                 </Link>
-                <Link to="#">
+                <Link to="https://github.com/muhammed9295" target="_blank">
                   <FaGithub className="hover:text-accent" />
                 </Link>
               </div>
